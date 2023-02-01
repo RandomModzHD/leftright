@@ -1,0 +1,14 @@
+^up::
+loop ;will hold down left for 15 then right for 15 then left again
+ {
+    send, {left down}
+    sleep, 15000
+    send, {left up}
+    send, {right down}
+    sleep, 15000
+    send, {right up}
+ }
+return
+
+end::exitapp ;the end key will exit the script
+pause::pause ;the pause key will pause and resume the loop
